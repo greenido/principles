@@ -1,6 +1,8 @@
 # Good To Great - Engineering Principles 🐸
 
-First before we even start: https://12factor.net/
+First before we even start: 
+1. https://greenido.wordpress.com/2018/10/18/product-excellence-best-practices/
+2. https://12factor.net/
 
 Now, go get coffee.
 
