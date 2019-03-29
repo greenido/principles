@@ -1,4 +1,10 @@
-# Trustpilot's Engineering Principles
+# Good Engineering Principles
+
+First before we even start: https://12factor.net/
+
+Now, go get coffee.
+
+...And let's start:
 
 - **[Code Review Everything](#code-review-everything)**
 - **[Services First](#services-first)**
@@ -24,14 +30,14 @@ If those services are not good enough - or too expensive, we will research and u
 
 *We do this because we don’t want to reinvent the wheel every time we need a new service or library - focusing on our core business. On top of that, those service providers are experts in their domain and their services are battle tested by multiple customers. We usually can’t outperform them on multiple levels (e.g. cost, features, quality, time to market). Consider extending an existing open source library before building it from scratch yourself if parts are missing.*
 
-## Serverless First
+## Serverless First (🛑 but only if you have a good way to manage/control it)
 
 If Serverless is not available or practical, containers are recommended.
 Virtual servers are considered legacy and should be avoided.
 
 *We do this because we strongly believe that Serverless (FaaS, BaaS, DBaaS) is the future of the cloud and we’d like to be on the forefront of that movement. Serverless might not necessarily be the right choice for everything today, but start your architecture discussions there. We’re in the process of fading out virtual servers and want to avoid creating new ones. The benefits of Serverless and containers over virtual servers are diverse: simplified and faster autoscaling, better service orchestration, reduction of cloud service costs, reduction of operational costs and modernizing our cloud stack.*
 
-## Build smaller things
+## Build smaller things (Think 'micro service' should be micro or at least 'small')
 
 Generally consider making smaller rather than larger systems, services, repositories, etc.
 
